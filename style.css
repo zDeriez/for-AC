@@ -1,0 +1,190 @@
+body {
+    background: #f7d9ff;
+  }
+  h1 {
+    position: relative;
+    text-align: center;
+    color: #353535;
+    font-size: 50px;
+    font-family: "Cormorant Garamond", serif;
+  }
+  @keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+  p {
+    /* font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #676767;
+    font-size: 24px; */
+ 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+
+      font-family: 'Courier New', monospace;
+      font-size: 24px;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      border-right: 3px solid black;
+      animation: typing 3s steps(20, end) forwards, blink 0.7s infinite;
+  }
+  .frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  button {
+    margin: 20px;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    opacity: 0;  /* Começa invisível */
+    animation: button-typing 3s steps(20, end) forwards; /* Animação de digitação para o botão */
+
+  }
+
+  @keyframes button-typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 130px;
+    }
+}
+
+  .btn-12{
+    position: relative;
+    left: 640px;
+    border:none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+    opacity: 0;
+    animation: button-typing 3s steps(20, end) forwards, fadeIn 1s 3s forwards;
+  }
+ /* Efeito de aparecer gradualmente o botão */
+ @keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+} 
+  .btn-12 span {
+    background: rgb(251, 0, 255);
+  background: linear-gradient(0deg, rgb(238, 145, 248) 0%, rgb(210, 27, 204) 100%);
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s ease;
+    transition: all .3s;
+  }
+  .btn-12 span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-12 span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-12:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  .btn-12:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+   color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+
+/* Efeito de transição ao clicar no botão */
+.custom-btn:active {
+  transform: scale(0.95); /* Reduz ligeiramente o tamanho para dar a sensação de ser pressionado */
+  background-color: #512ee0; /* Muda a cor de fundo quando o botão é pressionado */
+  box-shadow: inset 2px 2px 5px 0px rgba(234, 5, 255, 0.3),
+              5px 5px 15px 0px rgba(255, 255, 255, 0.834); /* Efeito de sombra quando pressionado */
+}
+
+/* Efeito de fadeIn para mostrar o botão */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Animação para quando o botão for clicado e redirecionado */
+.clicked {
+  transform: scale(0.8);  /* Botão encolhe ao ser clicado */
+  opacity: 0;  /* Botão desaparece */
+  transition: all 1s ease-out;  /* Transição suave */
+}
+
