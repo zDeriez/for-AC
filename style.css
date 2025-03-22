@@ -83,7 +83,7 @@ body {
     }
 }
 
-  .btn-12{
+  .btn1{
     position: relative;
     left: 640px;
     border:none;
@@ -105,7 +105,7 @@ body {
       opacity: 1;
   }
 } 
-  .btn-12 span {
+  .btn1 span {
     background: rgb(251, 0, 255);
   background: linear-gradient(0deg, rgb(238, 145, 248) 0%, rgb(210, 27, 204) 100%);
     display: block;
@@ -124,7 +124,7 @@ body {
     -webkit-transition: all .3s ease;
     transition: all .3s;
   }
-  .btn-12 span:nth-child(1) {
+  .btn1 span:nth-child(1) {
     box-shadow:
      -7px -7px 20px 0px #fff9,
      -4px -4px 5px 0px #fff9,
@@ -137,7 +137,7 @@ body {
     -moz-transform-origin: 50% 50% -20px;
     transform-origin: 50% 50% -20px;
   }
-  .btn-12 span:nth-child(2) {
+  .btn1 span:nth-child(2) {
     -webkit-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
     transform: rotateX(0deg);
@@ -145,7 +145,7 @@ body {
     -moz-transform-origin: 50% 50% -20px;
     transform-origin: 50% 50% -20px;
   }
-  .btn-12:hover span:nth-child(1) {
+  .btn1:hover span:nth-child(1) {
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
      7px 7px 20px 0px rgba(0,0,0,.1),
      4px 4px 5px 0px rgba(0,0,0,.1);
@@ -153,7 +153,7 @@ body {
     -moz-transform: rotateX(0deg);
     transform: rotateX(0deg);
   }
-  .btn-12:hover span:nth-child(2) {
+  .btn1:hover span:nth-child(2) {
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
      7px 7px 20px 0px rgba(0,0,0,.1),
      4px 4px 5px 0px rgba(0,0,0,.1);
