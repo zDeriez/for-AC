@@ -45,7 +45,7 @@ body {
       animation: typing 3s steps(20, end) forwards, blink 0.7s infinite;
   }
   .frame {
-    width: 90%;
+    width: 100%;
     margin: 40px auto;
     text-align: center;
   }
@@ -53,13 +53,14 @@ body {
     margin: 20px;
   }
   .custom-btn {
-    width: 130px;
-    height: 40px;
-    color: #fff;
+    width: 170px;
+    height: 60px;
+    color: #f7d9ff;
     border-radius: 5px;
     padding: 10px 25px;
     font-family: 'Lato', sans-serif;
-    font-weight: 500;
+    font-weight: 570;
+    font-size: 17px;
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -71,6 +72,7 @@ body {
     outline: none;
     opacity: 0;  /* Começa invisível */
     animation: button-typing 3s steps(20, end) forwards; /* Animação de digitação para o botão */
+    
 
   }
 
@@ -79,7 +81,7 @@ body {
         width: 0;
     }
     to {
-        width: 130px;
+        width: 170px;
     }
 }
 
@@ -88,8 +90,8 @@ body {
     left: 640px;
     border:none;
     box-shadow: none;
-    width: 130px;
-    height: 40px;
+    width: 170px;
+    height: 60px;
     line-height: 42px;
     -webkit-perspective: 230px;
     perspective: 230px;
@@ -110,8 +112,8 @@ body {
   background: linear-gradient(0deg, rgb(238, 145, 248) 0%, rgb(210, 27, 204) 100%);
     display: block;
     position: absolute;
-    width: 130px;
-    height: 40px;
+    width: 170px;
+    height: 60px;
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
      7px 7px 20px 0px rgba(0,0,0,.1),
      4px 4px 5px 0px rgba(0,0,0,.1);
